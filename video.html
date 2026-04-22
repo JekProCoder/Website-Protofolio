@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Karya | Bikini Bottom Edition</title>
+     <link rel="icon" href="Kyy.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --yellow: #effd5f;
+            --blue: #008dc4;
+            --pink: #ff91ab;
+            --white: rgba(255, 255, 255, 0.95);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* --- WALLPAPER POLKADOT --- */
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background-color: var(--blue);
+            background-image: radial-gradient(white 15%, transparent 16%),
+                              radial-gradient(white 15%, transparent 16%);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+            background-attachment: fixed;
+            color: #2c3e50;
+        }
+
+        /* --- HEADER DENGAN VIDEO --- */
+        header {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 10px solid var(--yellow);
+        }
+
+        .header-video {
+            position: absolute;
+            top: 50%; left: 50%;
+            min-width: 100%; min-height: 100%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-family: 'Bungee', cursive;
+            color: var(--yellow);
+            font-size: 3rem;
+            text-shadow: 6px 6px 0px #e67e22, 10px 10px 0px #2c3e50;
+            z-index: 1;
+        }
+
+        /* --- NAVIGASI --- */
+        nav {
+            background: var(--yellow);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0 5px 0px #c0ca33;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            padding: 8px 25px;
+            background: white;
+            border-radius: 50px;
+            font-family: 'Bungee', cursive;
+            margin: 0 10px;
+            border: 3px solid #2c3e50;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            transform: scale(1.1) rotate(5deg);
+            background: var(--pink);
+            color: white;
+        }
+
+        /* --- KONTEN VIDEO --- */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .video-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 40px;
+            border: 8px solid var(--yellow);
+            box-shadow: 20px 20px 0px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-family: 'Bungee', cursive;
+            color: #d35400;
+            margin-bottom: 15px;
+            border-bottom: 4px dashed var(--yellow);
+            display: inline-block;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            border: 6px solid #2c3e50;
+            background: #000;
+            margin: 20px 0;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+        }
+
+        .info-text { margin-bottom: 25px; line-height: 1.6; }
+
+        footer {
+            background: #2c3e50;
+            padding: 30px;
+            color: var(--yellow);
+            text-align: center;
+            margin-top: 60px;
+            border-top: 8px solid var(--pink);
+            font-family: 'Bungee', cursive;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <video autoplay muted loop playsinline class="header-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-underwater-view-of-a-coral-reef-1551-large.mp4" type="video/mp4">
+        </video>
+        <h1>VIDEO KARYA</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">BERANDA</a>
+        <a href="profil.html">PROFIL</a>
+        <a href="video.html">VIDEO</a>
+        <a href="project.html">PROJECT</a>
+    </nav>
+
+    <div class="container">
+        <div class="video-card">
+            <h2>Video Argumentasi</h2>
+           <div class="info-text">
+    <h2>Topik</h2> 
+    <p style="font-family: 'Bungee', cursive;">Teks Argumentasi tentang Internship Curriculum</p>
+    
+    <h2>Alasan</h2> 
+    <p style="font-family: 'Bungee', cursive;">Bertujuan untuk memberitahu pembaca bahwa integrasi pengalaman kerja praktis ke dalam pendidikan adalah sebuah keharusan, bukan sekadar pelengkap.</p>
+</div>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/tpbq_N8N6I0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <h2>Pesan dan harapan</h2>
+            <p style="font-family: 'Bungee', cursive;">Semoga video ini memberikan manfaat dan wawasan baru bagi siapapun yang menontonnya.</p>
+        </div>
+    
+
+    <footer>
+        <p>SMPIT AL HARAKI &bull; DZAKY HAIDAR &bull; 2026</p>
+    </footer>
+
+</body>
+</html>

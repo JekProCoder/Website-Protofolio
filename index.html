@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Edisi Bikini Bottom</title>
+    <link rel="icon" href="Kyy.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Patrick+Hand&display=swap" rel="stylesheet">         
+    <style>
+        :root {
+            --spongebob-yellow: #effd5f;
+            --ocean-blue: #008dc4;
+            --patrick-pink: #ff91ab;
+            --bubble-white: rgba(255, 255, 255, 0.9);
+            --text-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Patrick Hand', cursive;
+            /* Background pola bunga awan khas SpongeBob */
+            background-color: var(--ocean-blue);
+            background-image: radial-gradient(#ffffff 10%, transparent 10.5%);
+            background-size: 100px 100px;
+            color: var(--text-color);
+            font-size: 1.2rem;
+        }
+
+        /* Header Gaya Papan Pengumuman */
+        header {
+          position: relative; /* Penting agar video gak lari */
+            height: 350px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 10px solid var(--spongebob-yellow);
+        }
+
+        header h1 {
+            font-family: 'Bungee', cursive;
+            color: var(--spongebob-yellow);
+            font-size: 3rem;
+            text-shadow: 5px 5px 0px #e67e22, 8px 8px 0px #2c3e50;
+            text-align: center;
+            line-height: 1;
+        }
+
+        /* Navigasi Berbentuk Gelembung */
+        nav {
+            background: var(--spongebob-yellow);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 5px 0px #c0ca33;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #444;
+            padding: 8px 20px;
+            background: white;
+            border-radius: 50px;
+            font-family: 'Bungee', cursive;
+            font-size: 0.8rem;
+            border: 3px solid #2c3e50;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            transform: scale(1.1) rotate(5deg);
+            background: var(--patrick-pink);
+            color: white;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+        }
+
+        /* Kartu Teks Seperti Kertas */
+        .content-text {
+            background: var(--bubble-white);
+            padding: 40px;
+            border-radius: 30px;
+            border: 5px dashed var(--spongebob-yellow);
+            box-shadow: 15px 15px 0px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-family: 'Bungee', cursive;
+            color: #d35400;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        p { margin-bottom: 20px; line-height: 1.5; }
+
+        /* Gallery Gambar Bulat-bulat */
+        .content-gallery {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .image-wrapper {
+            border: 8px solid white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+            transform: rotate(-2deg);
+            transition: 0.3s;
+        }
+
+        .image-wrapper:nth-child(even) { transform: rotate(2deg); }
+
+        .image-wrapper:hover {
+            transform: scale(1.05) rotate(0deg);
+        }
+
+        .content-gallery img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding: 40px;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            border-top: 10px solid var(--patrick-pink);
+        }
+
+        footer p {
+            font-family: 'Bungee', cursive;
+            color: var(--spongebob-yellow);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DZAKY'S<br>PORTOFOLIO</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="profil.html">Profil</a>
+        <a href="video.html">Video</a>
+        <a href="project.html">Project</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-grid">
+            
+            <div class="content-text">
+                <h2>Selamat Datang!</h2>
+                <p>Website ini merupakan media pendukung untuk menampilkan hasil Ujian Praktik Terintegrasi. Konten utamanya adalah video broadcasting keren tentang teks argumentasi!</p>
+
+                <h2>Tentang Website</h2>
+                <p>Ini adalah jurnal digital perjalananku selama mengikuti Ujian Praktik. Isinya penuh dengan hasil karya yang dibuat dengan semangat seperti SpongeBob mau kerja di Krusty Krab!</p>
+
+                <h2>Tujuan</h2>
+                <p>Ingin menunjukkan kalau belajar HTML itu seru dan bisa dibuat jadi sekreatif mungkin!</p>
+
+                <h2>Topik Saya</h2>
+                <p><i>(Isi topik argumentasi kamu di sini, ya!)</i></p>
+
+                <h2>Harapan</h2>
+                <p>Semoga siapapun yang melihat ini bisa tersenyum dan mendapat inspirasi baru.</p>
+            </div>
+
+            <div class="content-gallery">
+                <div class="image-wrapper">
+                    <img src="cempe.jpg" alt="Foto 1">
+                </div>
+                <div class="image-wrapper">
+                    <img src="sapi.jpg" alt="Foto 2">
+                </div>
+                <div class="image-wrapper">
+                    <img src="llama.jpg" alt="Foto 3">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>SMPIT Al - Haraki - Dzaky Haidar @2026</p>
+    </footer>
+
+</body>
+</html>
